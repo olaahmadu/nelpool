@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NELPOOL</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body >
+            <nav class="sidebar sodebar close">
+                <header>
+                    <div class="sidegan">
+                    <div class="image-text">
+                        <span class="image">
+                            <img src="logo.png" alt="logo" class="laga">
+                        </span>
+
+                        <div class="text header-text">
+                            <span class="name">Menu</span>
+                        </div>
+                    </div>
+
+                     <i class='bx bx-chevron-right opena toggle'></i>
+                    </header>
+
+                    <div class="menu-bar">
+                        <div class="menu"> 
+                             <ul class="menu-links">   
+                                <li class="search-box">
+                                    <i class='bx bx-search icon'></i>
+                                    <input type="text" placeholder="Search...">
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-home-alt icon'></i>
+                                        <span class="text nav-text">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-bell icon'></i>
+                                        <span class="text nav-text">Notification</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-line-chart icon'></i>
+                                        <span class="text nav-text">Exchange</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-pie-chart-alt icon'></i>
+                                        <span class="text nav-text">Analytics</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-coin-stack icon'></i>
+                                        <span class="text nav-text">prices</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-briefcase icon'></i>
+                                        <span class="text nav-text">Company</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-network-chart icon'></i>
+                                        <span class="text nav-text">Learn</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-wallet icon'></i>
+                                        <span class="text nav-text">Wallets</span>
+                                    </a>
+                                </li>
+                            </ul> 
+                            <div class="bottom-content">
+                            <li class="">
+                                <a href="#">
+                                    <i class='bx bx-log-out icon'></i>
+                                    <span class="text nav-text">Log out</span>
+                                </a>
+                            </li>
+                            
+                            <li class="mode">
+                                <div class="moon-sun">
+                                    <i class='bx bx-moon icon moon'></i>
+                                    <i class='bx bx-sun icon sun'></i>
+                                </div>
+                                <span class="mode-text text">Dark Mode</span>
+
+                                <div class="toggle-switch">
+                                    <span class="switch"></span>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                    
+                       
+                </div>
+                    <!-- <i class='bx bx-x'></i>
+
+                    <div class="menu-icon" id="menuIcon">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                      </div>   -->
+                    </header>
+
+                </nav>
+                
+                <div class="sideIconic"><i class='bx bx-chevron-right tuggle' id="tuggleIconic"></i></div>
+                <nav class="topbar">
+                    <header class="topheader">
+                    <div class="image-text">
+                        <span class="image">
+                            <img src="logo.png" alt="logo" class="loga">
+                        </span>
+
+                         <!-- <div class="text header-text">
+                            <span class="name">Menu</span>
+                        </div>  -->
+                    </div>
+
+                    <!-- <i class='bx bx-chevron-right toggle'></i> -->
+
+                    <div class="menu-bar">
+                        <div class="menu"> 
+                            
+                            <ul class="menu-links vetical-menu">
+                                <li onclick=hideSidebar() class="clos">
+                                    <a href="#"><span class="material-symbols-outlined closex">
+                                        close
+                                        </span></a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-home-alt icon'></i>
+                                        <span class="text nav-text">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-bell icon'></i>
+                                        <span class="text nav-text">Notification</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-line-chart icon'></i>
+                                        <span class="text nav-text">Exchange</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-pie-chart-alt icon'></i>
+                                        <span class="text nav-text">Analytics</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-coin-stack icon'></i>
+                                        <span class="text nav-text">prices</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-briefcase icon'></i>
+                                        <span class="text nav-text">Company</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-network-chart icon'></i>
+                                        <span class="text nav-text">Learn</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-wallet icon'></i>
+                                        <span class="text nav-text">Wallets</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#">
+                                        <i class='bx bx-log-out icon'></i>
+                                        <span class="text nav-text">Log out</span>
+                                    </a>
+                                </li>
+                                
+                                <li class="modal">
+                                    <div class="ara">
+                                        <div class="mun-son">
+                                            <i class='bx bx-moon icon mun'></i>
+                                            <i class='bx bx-sun icon son'></i>
+                                        </div>
+                                        <span class="modal-text text">Dark Mode</span>
+        
+                                        <div class="toggle-swutch">
+                                            <span class="swutch"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- <li>
+                                    <a href="#"><span class="material-symbols-outlined">
+                                        menu
+                                        </span></a>
+                                </li> -->
+                            </ul> 
+                            <ul class="menu-links straight">
+                                <li class="search-box">
+                                    <i class='bx bx-search icon'></i>
+                                    <input type="text" placeholder="Search...">
+                            </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-home-alt icon'></i>
+                                        <span class="text nav-text">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-bell icon'></i>
+                                        <span class="text nav-text">Notification</span>
+                                    </a>
+                                </li>
+                               <!--  <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-line-chart icon'></i>
+                                        <span class="text nav-text">Exchange</span>
+                                    </a>
+                                </li>
+                                 <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-pie-chart-alt icon'></i>
+                                        <span class="text nav-text">Analytics</span>
+                                    </a>
+                                </li> 
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-coin-stack icon'></i>
+                                        <span class="text nav-text">prices</span>
+                                    </a>
+                                </li>
+                                 <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-briefcase icon'></i>
+                                        <span class="text nav-text">Company</span>
+                                    </a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-network-chart icon'></i>
+                                        <span class="text nav-text">Learn</span>
+                                    </a>
+                                </li> 
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-wallet icon'></i>
+                                        <span class="text nav-text">Wallets</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#">
+                                        <i class='bx bx-log-out icon'></i>
+                                        <span class="text nav-text">Log out</span>
+                                    </a>
+                                </li>
+                                
+                                <li class="modal">
+                                    <div class="mun-son">
+                                        <i class='bx bx-moon icon mun'></i>
+                                        <i class='bx bx-sun icon son'></i>
+                                    </div>
+                                    <span class="mode-text text">Dark Mode</span>
+    
+                                    <div class="toggle-swutch">
+                                        <span class="swutch"></span>
+                                    </div>
+                                </li> -->
+                                <li onclick=showSidebar()>
+                                    <a href="#"><span class="material-symbols-outlined openX">
+                                        menu
+                                        </span></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </header>
+                    
+                </nav>
+
+                <section class="home">
+                    <div class="text">Dashboard</div>
+
+                    <section class="firstSection">
+                        <h1 class="hoding"> New Crytpo Web.</h1>
+                        <p class="firstText">Stake about 1000+ crypto for free.</p>
+                    </section>
+                </section>
+            <!-- <span>NELPOOL</span>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Service</a></li>
+            </ul> -->
+
+    <!-- <main>
+        <p> Stake about 1000+ crypto also
+        store, send and recieve cryptocurrencies
+        and also swap coins and token. Also have
+        it's Nelcoin, a POS decentalized crypto 
+        with it own blockchain...
+    </p>
+    <h4>Table Of Content</h4>
+    <ul>
+        <li>Nelpool</li>
+        <li>Nelcoin</li>
+        <li>Nelswap</li>
+    </ul>
+    </main> -->
+    <script src="app.js"></script>
+</body>
+</html>
