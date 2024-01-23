@@ -229,3 +229,45 @@ function enter() {
 //     elemento.classList.remove('openam');
 //   }
 // }
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if(entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }else{
+      entry.target.classList.remove('show');
+    }
+  });
+});
+const obsorver = new IntersectionObserver((entrios) => {
+  entrios.forEach((entri) => {
+    console.log(entri);
+    if(entri.isIntersecting) {
+      entri.target.classList.add('shuw');
+    }else{
+      entri.target.classList.remove('shuw');
+    }
+  });
+});
+const obsarver = new IntersectionObserver((entrias) => {
+  entrias.forEach((entra) => {
+    console.log(entra);
+    if(entra.isIntersecting) {
+      entra.target.classList.add('shaw');
+    }else{
+      entra.target.classList.remove('shaw');
+    }
+  });
+});
+
+
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+const huddenElements = document.querySelectorAll('.hudden');
+huddenElements.forEach((el) => obsorver.observe(el));
+
+const haddenElements = document.querySelectorAll('.bab');
+haddenElements.forEach((el) => obsarver.observe(el));
